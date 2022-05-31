@@ -1,0 +1,15 @@
+name: Build and Deploy Snapshot
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Build
+        id: build
+        run: echo 'building'
